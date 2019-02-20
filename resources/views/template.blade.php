@@ -7,7 +7,7 @@ foreach ($model->entity->attributes as $attribute) {
 }
 
 function boldFirst($text, $model = null) {
-    $text = preg_replace('`^([^.]*)`si', '<strong>$1</strong>', e($text));
+    $text = preg_replace('`^([^.]*)`si', '<strong>$1.</strong>', e($text));
     $text = preg_replace('`\.([^:]*)`si', '<em>$1</em>', $text);
     if (!empty($model)) {
         $text = replaceName($text, $model);
