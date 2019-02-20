@@ -1,0 +1,51 @@
+<?php
+
+return [
+    /**
+     * The Template Attributes
+     */
+    'attributes' => [
+        'size',
+        'creature_race',
+        'alignment',
+        'armor_class',
+        'hit_points',
+        'speel',
+        'str',
+        'dex',
+        'con',
+        'int',
+        'wis',
+        'cha',
+        'saving_throws',
+        'skills',
+        'damage_resistances',
+        'damage_immunities',
+        'condition_immunities',
+        'senses',
+        'languages',
+        'challenge_rating',
+        'spells_at_will',
+        'spells_three',
+        'multiattack',
+        'attack_1' => 'text',
+        'attack_2' => 'text',
+        'attack_3' => 'text',
+        'ability_1' => 'text',
+        'ability_2' => 'text',
+        'ability_3' => 'text',
+        'reaction_1' => 'text',
+        'reaction_2' => 'text',
+        'reaction_3' => 'text',
+        'innate_spellcasting' => 'text',
+        'magic_resistance' => 'text',
+        'magic_weapons' => 'text',
+        'regeneration' => 'text',
+        'legendary_resistance' => 'text',
+        'legendary_action_1' => 'text',
+        'legendary_action_2' => 'text',
+        'legendary_action_3' => 'text',
+        'legendary_resistance_count',
+        'legendary_actions' => 'text',
+    ]
+];
