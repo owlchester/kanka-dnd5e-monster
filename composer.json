@@ -1,0 +1,34 @@
+{
+  "name": "ilestis/ilestis/kanka-dnd5e-monster.git",
+  "description": "A attribute template for D&D 5th edition monsters",
+  "keywords": [
+    "kanka",
+    "dnd",
+    "5e",
+    "monsters"
+  ],
+  "homepage": "https.//github.com/ilestis/kanka-dnd5e-monster",
+  "license": "EUPL-1.1",
+  "authors": [
+    {
+      "name": "Ilestis",
+      "email": "hello@kanka.io",
+      "homepage": "https://kanka.io"
+    }
+  ],
+  "require": {
+    "illuminate/support": "~5"
+  },
+  "autoload": {
+    "psr-4": {
+      "Kanka\\Dnd5eMonster\\": "src"
+    }
+  },
+  "extra": {
+    "laravel": {
+      "providers": [
+        "Kanka\\Dnd5eMonster\\AttributeTemplateServiceProvider"
+      ]
+    }
+  }
+}
