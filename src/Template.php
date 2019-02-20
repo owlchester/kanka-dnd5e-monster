@@ -5,12 +5,21 @@ namespace Kanka\Dnd5eMonster;
 class Template
 {
     /**
+     * Alias for languages
+     * @return string
+     */
+    public function alias()
+    {
+        return 'dnd5emonster';
+    }
+
+    /**
      * Name of the template
      * @return string
      */
     public function name()
     {
-        return __('dnd5emonster::name');
+        return __($this->alias() . '::name');
     }
 
     /**
