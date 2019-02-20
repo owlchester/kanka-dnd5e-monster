@@ -15,20 +15,20 @@ class AttributeTemplateServiceProvider extends ServiceProvider
     {
         $this->loadViewsFrom(__DIR__.'/../resources/views', 'dnd5emonster');
 
-        $this->loadTranslationsFrom(realpath(__DIR__.'/../resources/lang'), 'dnd5emonster');
+        $this->loadTranslationsFrom(realpath(__DIR__.'/../publishable/lang'), 'dnd5emonster');
 
 
         // Assets
         $this->publishes([
-            __DIR__.'/../resources/assets' => public_path('vendor/dnd5emonster'),
+            __DIR__.'/../publishable/assets' => public_path('vendor/dnd5emonster'),
         ], 'public');
 
         // Config
         $this->publishes([
-            __DIR__.'/../resources/config/dnd5emonster.php' => config_path('dnd5emonster.php'),
+            __DIR__.'/../publishable/config/dnd5emonster.php' => config_path('dnd5emonster.php'),
         ]);
         $this->mergeConfigFrom(
-            __DIR__.'/../resources/config/dnd5emonster.php', 'dnd5emonster'
+            __DIR__.'/../publishable/config/dnd5emonster.php', 'dnd5emonster'
         );
     }
 }

@@ -4,6 +4,16 @@ namespace Kanka\Dnd5eMonster;
 
 class Template
 {
+
+    /**
+     * Name of the template
+     * @return string
+     */
+    public function name()
+    {
+        return __($this->alias() . '::name');
+    }
+
     /**
      * Alias for languages
      * @return string
@@ -14,12 +24,23 @@ class Template
     }
 
     /**
-     * Name of the template
+     * View name to render the attribute template
      * @return string
      */
-    public function name()
+    public function view()
     {
-        return __($this->alias() . '::name');
+        return $this->alias() . '::template';
+    }
+
+    /**
+     * CSS that should be included on the page
+     * @return array
+     */
+    public function styles()
+    {
+        return [
+            'css'
+        ];
     }
 
     /**
