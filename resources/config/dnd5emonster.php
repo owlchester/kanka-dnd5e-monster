@@ -10,7 +10,7 @@ return [
         'alignment',
         'armor_class',
         'hit_points',
-        'speel',
+        'speed',
         'str',
         'dex',
         'con',
