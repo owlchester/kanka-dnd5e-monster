@@ -26,6 +26,7 @@ return [
         'languages',
         'challenge_rating',
         'spells_at_will',
+        'spells_once',
         'spells_three',
         'multiattack',
         'attack_1' => ['type' => 'text'],

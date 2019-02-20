@@ -6,12 +6,12 @@ class Template
 {
 
     /**
-     * Name of the template
+     * Translation key used for the name of the template
      * @return string
      */
     public function name()
     {
-        return __($this->alias() . '::name');
+        return __($this->alias() . '::template.name');
     }
 
     /**
@@ -30,17 +30,6 @@ class Template
     public function view()
     {
         return $this->alias() . '::template';
-    }
-
-    /**
-     * CSS that should be included on the page
-     * @return array
-     */
-    public function styles()
-    {
-        return [
-            'css'
-        ];
     }
 
     /**

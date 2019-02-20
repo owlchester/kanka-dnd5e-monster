@@ -24,77 +24,77 @@ function replaceName($text, $model) {
     <hr>
     <div class="first">
         @if (Arr::get($attributes, 'armor_class'))
-            <strong>{{ __('attributes/dnd5emonster.armor_class') }}</strong>
+            <strong>{{ __('dnd5emonster::template.armor_class') }}</strong>
             {{ Arr::get($attributes, 'armor_class') }}<br />
         @endif
         @if (Arr::get($attributes, 'hit_points'))
-            <strong>{{ __('attributes/dnd5emonster.hit_points') }}</strong>
+            <strong>{{ __('dnd5emonster::template.hit_points') }}</strong>
             {{ Arr::get($attributes, 'hit_points') }}<br />
         @endif
         @if (Arr::get($attributes, 'speed'))
-            <strong>{{ __('attributes/dnd5emonster.speed') }}</strong>
+            <strong>{{ __('dnd5emonster::template.speed') }}</strong>
             {{ Arr::get($attributes, 'speed') }}<br />
         @endif
     </div>
     <hr>
     <div class="row attributes">
         <div class="col-md-2 text-center">
-            <h5>{{ __('attributes/dnd5emonster.str') }}</h5>
-            {{ Arr::get($attributes, 'STR') }}
+            <h5>{{ __('dnd5emonster::template.str') }}</h5>
+            {{ Arr::get($attributes, 'str') }}
         </div>
         <div class="col-md-2 text-center">
-            <h5>{{ __('attributes/dnd5emonster.dex') }}</h5>
-            {{ Arr::get($attributes, 'DEX') }}
+            <h5>{{ __('dnd5emonster::template.dex') }}</h5>
+            {{ Arr::get($attributes, 'dex') }}
         </div>
         <div class="col-md-2 text-center">
-            <h5>{{ __('attributes/dnd5emonster.con') }}</h5>
-            {{ Arr::get($attributes, 'CON') }}
+            <h5>{{ __('dnd5emonster::template.con') }}</h5>
+            {{ Arr::get($attributes, 'con') }}
         </div>
         <div class="col-md-2 text-center">
-            <h5>{{ __('attributes/dnd5emonster.int') }}</h5>
-            {{ Arr::get($attributes, 'INT') }}
+            <h5>{{ __('dnd5emonster::template.int') }}</h5>
+            {{ Arr::get($attributes, 'int') }}
         </div>
         <div class="col-md-2 text-center">
-            <h5>{{ __('attributes/dnd5emonster.wis') }}</h5>
-            {{ Arr::get($attributes, 'WIS') }}
+            <h5>{{ __('dnd5emonster::template.wis') }}</h5>
+            {{ Arr::get($attributes, 'wis') }}
         </div>
         <div class="col-md-2 text-center">
-            <h5>{{ __('attributes/dnd5emonster.cha') }}</h5>
-            {{ Arr::get($attributes, 'CHA') }}
+            <h5>{{ __('dnd5emonster::template.cha') }}</h5>
+            {{ Arr::get($attributes, 'cha') }}
         </div>
     </div>
     <hr>
     <div class="skills">
         @if (Arr::get($attributes, 'saving_throws'))
-            <strong>{{ __('attributes/dnd5emonster.saving_throws') }}</strong>
+            <strong>{{ __('dnd5emonster::template.saving_throws') }}</strong>
             {{ Arr::get($attributes, 'saving_throws') }}<br />
         @endif
         @if (Arr::get($attributes, 'skills'))
-            <strong>{{ __('attributes/dnd5emonster.skills') }}</strong>
+            <strong>{{ __('dnd5emonster::template.skills') }}</strong>
             {{ Arr::get($attributes, 'skills') }}<br />
         @endif
         @if (Arr::get($attributes, 'damage_resistance'))
-            <strong>{{ __('attributes/dnd5emonster.damage_resistance') }}</strong>
+            <strong>{{ __('dnd5emonster::template.damage_resistance') }}</strong>
             {{ Arr::get($attributes, 'damage_resistance') }}<br />
         @endif
         @if (Arr::get($attributes, 'damage_immunities'))
-            <strong>{{ __('attributes/dnd5emonster.damage_immunities') }}</strong>
+            <strong>{{ __('dnd5emonster::template.damage_immunities') }}</strong>
             {{ Arr::get($attributes, 'damage_immunities') }}<br />
         @endif
         @if (Arr::get($attributes, 'condition_immunities'))
-            <strong>{{ __('attributes/dnd5emonster.condition_immunities') }}</strong>
+            <strong>{{ __('dnd5emonster::template.condition_immunities') }}</strong>
             {{ Arr::get($attributes, 'condition_immunities') }}<br />
         @endif
         @if (Arr::get($attributes, 'senses'))
-            <strong>{{ __('attributes/dnd5emonster.languages') }}</strong>
+            <strong>{{ __('dnd5emonster::template.languages') }}</strong>
             {{ Arr::get($attributes, 'senses') }}<br />
         @endif
         @if (Arr::get($attributes, 'languages'))
-            <strong>{{ __('attributes/dnd5emonster.senses') }}</strong>
+            <strong>{{ __('dnd5emonster::template.senses') }}</strong>
             {{ Arr::get($attributes, 'languages') }}<br />
         @endif
         @if (Arr::get($attributes, 'challenge_rating'))
-            <strong>{{ __('attributes/dnd5emonster.challenge_rating') }}</strong>
+            <strong>{{ __('dnd5emonster::template.challenge_rating') }}</strong>
             {{ Arr::get($attributes, 'challenge_rating') }}<br />
         @endif
     </div>
@@ -102,26 +102,26 @@ function replaceName($text, $model) {
 
     <div class="abilities">
         @if (Arr::get($attributes, 'innate_spellcasting'))
-            <p><strong>{{ __('attributes/dnd5emonster.innate_spellcasting') }}.</strong>
+            <p><strong>{{ __('dnd5emonster::template.innate_spellcasting') }}.</strong>
                 {{ replaceName(Arr::get($attributes, 'innate_spellcasting'), $model) }}
             </p>
         @endif
         @if (Arr::get($attributes, 'spells_at_will'))
-            {{ __('attributes/dnd5emonster.at_will') }}:
+            {{ __('dnd5emonster::template.at_will') }}:
             {{ replaceName(Arr::get($attributes, 'spells_at_will'), $model) }}<br />
         @endif
         @if (Arr::get($attributes, 'spells_once'))
-            {{ __('attributes/dnd5emonster.spells_1') }}:
+            {{ __('dnd5emonster::template.spells_1') }}:
             {{ replaceName(Arr::get($attributes, 'spells_once'), $model) }}<br />
         @endif
         @if (Arr::get($attributes, 'spells_three'))
-            {{ __('attributes/dnd5emonster.spells_3') }}:
+            {{ __('dnd5emonster::template.spells_3') }}:
             {{ replaceName(Arr::get($attributes, 'spells_three'), $model) }}<br />
         @endif
         @if (Arr::get($attributes, 'legendary_resistance_count'))
             <p>
                 <strong>{{ trans_choice(
-                    'attributes/dnd5emonster.legendary_resistance_count',
+                    'dnd5emonster::template.legendary_resistance_count',
                     Arr::get($attributes, 'legendary_resistance_count'),
                     ['count' => Arr::get($attributes, 'legendary_resistance_count')]
                 ) }}.</strong>
@@ -130,29 +130,29 @@ function replaceName($text, $model) {
         @endif
         @if (Arr::get($attributes, 'magic_resistance'))
             <p>
-                <strong>{{ __('attributes/dnd5emonster.magic_resistance') }}.</strong>
+                <strong>{{ __('dnd5emonster::template.magic_resistance') }}.</strong>
                 {{ replaceName(Arr::get($attributes, 'magic_resistance'), $model) }}
             </p>
         @endif
         @if (Arr::get($attributes, 'magic_weapons'))
             <p>
-                <strong>{{ __('attributes/dnd5emonster.magic_weapons') }}.</strong>
+                <strong>{{ __('dnd5emonster::template.magic_weapons') }}.</strong>
                 {{ replaceName(Arr::get($attributes, 'magic_weapons'), $model) }}
             </p>
         @endif
         @if (Arr::get($attributes, 'regeneration'))
             <p>
-                <strong>{{ __('attributes/dnd5emonster.regeneration') }}.</strong>
+                <strong>{{ __('dnd5emonster::template.regeneration') }}.</strong>
                 {{ replaceName(Arr::get($attributes, 'regeneration'), $model) }}
             </p>
         @endif
     </div>
     <div class="actions">
-        <h4>{{ __('attributes/dnd5emonster.actions') }}</h4>
+        <h4>{{ __('dnd5emonster::template.actions') }}</h4>
 
         @if (Arr::get($attributes, 'multiattack'))
             <strong>
-                {{ __('attributes/dnd5emonster.multiattack') }}</strong>.
+                {{ __('dnd5emonster::template.multiattack') }}</strong>.
             {{ Arr::get($attributes, 'multiattack') }}
             </p>
         @endif
@@ -178,7 +178,7 @@ function replaceName($text, $model) {
 
     <div class="reactions">
         @if (Arr::get($attributes, 'reaction_1'))
-            <h4>{{ __('attributes/dnd5emonster.reactions') }}</h4>
+            <h4>{{ __('dnd5emonster::template.reactions') }}</h4>
             <p>{!! boldFirst(Arr::get($attributes, 'reaction_1'), $model) !!}.</p>
         @endif
         @if (Arr::get($attributes, 'reaction_2'))
@@ -190,7 +190,7 @@ function replaceName($text, $model) {
     </div>
     <div class="legendary">
         @if (Arr::get($attributes, 'legendary_actions'))
-            <h4>{{ __('attributes/dnd5emonster.legendary_actions') }}</h4>
+            <h4>{{ __('dnd5emonster::template.legendary_actions') }}</h4>
             <p>
                 {{ replaceName(Arr::get($attributes, 'legendary_actions'), $model) }}
             </p>
@@ -209,5 +209,5 @@ function replaceName($text, $model) {
 
 @section('styles')
     @parent
-    <link href="{{ mix('css/attributes/dnd5e.css') }}" rel="stylesheet">
+    <link href="{{ asset('/vendor/dnd5emonster/css/template.css') }}" rel="stylesheet">
 @endsection
