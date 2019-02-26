@@ -7,8 +7,9 @@ foreach ($model->entity->attributes as $attribute) {
 }
 
 function boldFirst($text, $model = null) {
-    $text = preg_replace('`^([^.]*)`si', '<strong>$1.</strong>', e($text));
-    $text = preg_replace('`\.([^:]*)`si', '<em>$1</em>', $text);
+    $text = preg_replace('`^([^.]*)\.`si', '<strong>$1.</strong>', e($text));
+    $text = preg_replace('`\>([^:]*):`si', '><em>$1:</em>', $text);
+
     if (!empty($model)) {
         $text = replaceName($text, $model);
     }
@@ -147,13 +148,13 @@ function replaceName($text, $model) {
             </p>
         @endif
         @if (Arr::get($attributes, 'feature_1'))
-                <p>{!! boldFirst(Arr::get($attributes, 'feature_1'), $model) !!}.</p>
+            <p>{!! boldFirst(Arr::get($attributes, 'feature_1'), $model) !!}</p>
         @endif
         @if (Arr::get($attributes, 'feature_2'))
-                <p>{!! boldFirst(Arr::get($attributes, 'feature_2'), $model) !!}.</p>
+            <p>{!! boldFirst(Arr::get($attributes, 'feature_2'), $model) !!}</p>
         @endif
         @if (Arr::get($attributes, 'feature_3'))
-                <p>{!! boldFirst(Arr::get($attributes, 'feature_3'), $model) !!}.</p>
+            <p>{!! boldFirst(Arr::get($attributes, 'feature_3'), $model) !!}</p>
         @endif
     </div>
     <div class="actions">
@@ -166,35 +167,35 @@ function replaceName($text, $model) {
             </p>
         @endif
         @if (Arr::get($attributes, 'attack_1'))
-            <p>{!! boldFirst(Arr::get($attributes, 'attack_1'), $model) !!}.</p>
+            <p>{!! boldFirst(Arr::get($attributes, 'attack_1'), $model) !!}</p>
         @endif
         @if (Arr::get($attributes, 'attack_2'))
-            <p>{!! boldFirst(Arr::get($attributes, 'attack_2'), $model) !!}.</p>
+            <p>{!! boldFirst(Arr::get($attributes, 'attack_2'), $model) !!}</p>
         @endif
         @if (Arr::get($attributes, 'attack_3'))
-            <p>{!! boldFirst(Arr::get($attributes, 'attack_3'), $model) !!}.</p>
+            <p>{!! boldFirst(Arr::get($attributes, 'attack_3'), $model) !!}</p>
         @endif
         @if (Arr::get($attributes, 'ability_1'))
-            <p>{!! boldFirst(Arr::get($attributes, 'ability_1'), $model) !!}.</p>
+            <p>{!! boldFirst(Arr::get($attributes, 'ability_1'), $model) !!}</p>
         @endif
         @if (Arr::get($attributes, 'ability_2'))
-            <p>{!! boldFirst(Arr::get($attributes, 'ability_2'), $model) !!}.</p>
+            <p>{!! boldFirst(Arr::get($attributes, 'ability_2'), $model) !!}</p>
         @endif
         @if (Arr::get($attributes, 'ability_3'))
-            <p>{!! boldFirst(Arr::get($attributes, 'ability_3'), $model) !!}.</p>
+            <p>{!! boldFirst(Arr::get($attributes, 'ability_3'), $model) !!}</p>
         @endif
     </div>
 
     <div class="reactions">
         @if (Arr::get($attributes, 'reaction_1'))
             <h4>{{ __('dnd5emonster::template.reactions') }}</h4>
-            <p>{!! boldFirst(Arr::get($attributes, 'reaction_1'), $model) !!}.</p>
+            <p>{!! boldFirst(Arr::get($attributes, 'reaction_1'), $model) !!}</p>
         @endif
         @if (Arr::get($attributes, 'reaction_2'))
-            <p>{!! boldFirst(Arr::get($attributes, 'reaction_2'), $model) !!}.</p>
+            <p>{!! boldFirst(Arr::get($attributes, 'reaction_2'), $model) !!}</p>
         @endif
         @if (Arr::get($attributes, 'reaction_3'))
-            <p>{!! boldFirst(Arr::get($attributes, 'reaction_3'), $model) !!}.</p>
+            <p>{!! boldFirst(Arr::get($attributes, 'reaction_3'), $model) !!}</p>
         @endif
     </div>
     <div class="legendary">
@@ -205,13 +206,13 @@ function replaceName($text, $model) {
             </p>
         @endif
         @if (Arr::get($attributes, 'legendary_action_1'))
-            <p>{!! boldFirst(Arr::get($attributes, 'legendary_action_1'), $model) !!}.</p>
+            <p>{!! boldFirst(Arr::get($attributes, 'legendary_action_1'), $model) !!}</p>
         @endif
         @if (Arr::get($attributes, 'legendary_action_2'))
-            <p>{!! boldFirst(Arr::get($attributes, 'legendary_action_2'), $model) !!}.</p>
+            <p>{!! boldFirst(Arr::get($attributes, 'legendary_action_2'), $model) !!}</p>
         @endif
         @if (Arr::get($attributes, 'legendary_action_3'))
-            <p>{!! boldFirst(Arr::get($attributes, 'legendary_action_3'), $model) !!}.
+            <p>{!! boldFirst(Arr::get($attributes, 'legendary_action_3'), $model) !!}
         @endif
     </div>
 </div>
