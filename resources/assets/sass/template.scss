@@ -1,11 +1,11 @@
 $red: #822522;
 .attribute-layout-dnd5e {
-  background-color: rgba(253, 208, 69, 0.4);
-  padding: 5px;
+  background-color: rgba(250, 230, 165, 1);
+  padding: 10px;
   color: #000;
 
   .skills, .first, .attributes {
-    color: $red;
+    color: $red !important;
   }
 
   .abilities, .actions, .reactions, .legendary {
@@ -21,22 +21,23 @@ $red: #822522;
 
   p {
     margin-bottom: 10px;
+    color: #000;
   }
 
   h3 {
     margin: 5px 0;
-    color: $red;
+    color: $red !important;
   }
   h4 {
     font-size: .529cm;
     border-bottom: 2px solid $red;
-    color: $red;
+    color: $red !important;
   }
   h5 {
     font-size: 0.35cm;
     font-weight: 900;
     margin-bottom: 5px;
-    color: $red;
+    color: $red !important;
   }
   hr {
     border-bottom: 5px solid $red;

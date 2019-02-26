@@ -146,6 +146,15 @@ function replaceName($text, $model) {
                 {{ replaceName(Arr::get($attributes, 'regeneration'), $model) }}
             </p>
         @endif
+        @if (Arr::get($attributes, 'feature_1'))
+                <p>{!! boldFirst(Arr::get($attributes, 'feature_1'), $model) !!}.</p>
+        @endif
+        @if (Arr::get($attributes, 'feature_2'))
+                <p>{!! boldFirst(Arr::get($attributes, 'feature_2'), $model) !!}.</p>
+        @endif
+        @if (Arr::get($attributes, 'feature_3'))
+                <p>{!! boldFirst(Arr::get($attributes, 'feature_3'), $model) !!}.</p>
+        @endif
     </div>
     <div class="actions">
         <h4>{{ __('dnd5emonster::template.actions') }}</h4>
