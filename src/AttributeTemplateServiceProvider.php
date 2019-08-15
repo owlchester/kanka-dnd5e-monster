@@ -30,5 +30,12 @@ class AttributeTemplateServiceProvider extends ServiceProvider
         $this->mergeConfigFrom(
             __DIR__.'/../publishable/config/dnd5emonster.php', 'dnd5emonster'
         );
+
+        // Translations
+        $this->loadTranslationsFrom(__DIR__.'/../publishable/lang', 'dnd5emonster');
+
+        $this->publishes([
+            __DIR__.'/../publishable/lang' => resource_path('lang/vendor/dnd5emonster'),
+        ]);
     }
 }
