@@ -87,11 +87,11 @@ function replaceName($text, $model) {
             {{ Arr::get($attributes, 'condition_immunities') }}<br />
         @endif
         @if (Arr::get($attributes, 'senses'))
-            <strong>{{ __('dnd5emonster::template.languages') }}</strong>
+            <strong>{{ __('dnd5emonster::template.senses') }}</strong>
             {{ Arr::get($attributes, 'senses') }}<br />
         @endif
         @if (Arr::get($attributes, 'languages'))
-            <strong>{{ __('dnd5emonster::template.senses') }}</strong>
+            <strong>{{ __('dnd5emonster::template.languages') }}</strong>
             {{ Arr::get($attributes, 'languages') }}<br />
         @endif
         @if (Arr::get($attributes, 'challenge_rating'))
