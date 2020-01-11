@@ -82,6 +82,10 @@ function replaceName($text, $model) {
             <strong>{{ __('dnd5emonster::template.damage_immunities') }}</strong>
             {{ Arr::get($attributes, 'damage_immunities') }}<br />
         @endif
+        @if (Arr::get($attributes, 'damage_resistances'))
+            <strong>{{ __('dnd5emonster::template.damage_resistances') }}</strong>
+            {{ Arr::get($attributes, 'damage_resistances') }}<br />
+        @endif
         @if (Arr::get($attributes, 'condition_immunities'))
             <strong>{{ __('dnd5emonster::template.condition_immunities') }}</strong>
             {{ Arr::get($attributes, 'condition_immunities') }}<br />
