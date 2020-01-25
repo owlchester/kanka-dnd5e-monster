@@ -110,7 +110,7 @@ return [
     'cha' => 'CAR',
     'saving_throws' => 'Tiradas de Salvación',
     'skills' => 'Habilidades',
-    'damage_resistance' => 'Resistencia al daño',
+    'damage_resistances' => 'Resistencia al daño',
     'damage_immunities' => 'Inmunidad al daño',
     'condition_immunities' => 'Inmunidad a las Condiciones',
     'senses' => 'Sentidos',

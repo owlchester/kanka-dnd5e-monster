@@ -110,7 +110,7 @@ return [
     'cha' => 'CHA',
     'saving_throws' => 'Jets de Sauvegarde',
     'skills' => 'Compétences',
-    'damage_resistance' => 'Résistance aux dégâts',
+    'damage_resistances' => 'Résistance aux dégâts',
     'damage_immunities' => 'Immunité contre_les_dégâts',
     'condition_immunities' => 'Immunité contre les états',
     'senses' => 'Sens',

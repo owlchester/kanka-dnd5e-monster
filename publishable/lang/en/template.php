@@ -110,7 +110,7 @@ return [
     'cha' => 'CHA',
     'saving_throws' => 'Saving Throws',
     'skills' => 'Skills',
-    'damage_resistance' => 'Damage Resistance',
+    'damage_resistances' => 'Damage Resistance',
     'damage_immunities' => 'Damage Immunities',
     'condition_immunities' => 'Condition Immunities',
     'senses' => 'Senses',
