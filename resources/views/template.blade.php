@@ -5,18 +5,22 @@ $attributes = [];
 foreach ($model->entity->attributes as $attribute) {
     $attributes[$attribute->name] = $attribute->value;
 }
+// Don't re-declare these functions again (when bulk exporting fo rexample)
+if (!function_exists('boldFirst')) {
+    function boldFirst($text, $model = null) {
+        $text = preg_replace('`^([^.]*)\.`si', '<strong>$1.</strong>', e($text));
+        $text = preg_replace('`\>([^:]*):`si', '><em>$1:</em>', $text);
 
-function boldFirst($text, $model = null) {
-    $text = preg_replace('`^([^.]*)\.`si', '<strong>$1.</strong>', e($text));
-    $text = preg_replace('`\>([^:]*):`si', '><em>$1:</em>', $text);
-
-    if (!empty($model)) {
-        $text = replaceName($text, $model);
+        if (!empty($model)) {
+            $text = replaceName($text, $model);
+        }
+        return $text;
     }
-    return $text;
 }
-function replaceName($text, $model) {
-    return str_replace('{name}', $model->name, $text);
+if (!function_exists('replaceName')) {
+    function replaceName($text, $model) {
+        return str_replace('{name}', $model->name, $text);
+    }
 }
 ?>
 <div class="attribute-layout-dnd5e">
