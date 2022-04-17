@@ -1,5 +1,5 @@
 {
-  "name": "ilestis/kanka-dnd5e-monster",
+  "name": "owlchester/kanka-dnd5e-monster",
   "description": "A attribute template for D&D 5th edition monsters",
   "keywords": [
     "kanka",
@@ -7,17 +7,17 @@
     "5e",
     "monsters"
   ],
-  "homepage": "https://github.com/ilestis/kanka-dnd5e-monster",
+  "homepage": "https://github.com/owlchester/kanka-dnd5e-monster",
   "license": "EUPL-1.1",
   "authors": [
     {
-      "name": "Ilestis",
+      "name": "Owlchester SNC",
       "email": "hello@kanka.io",
       "homepage": "https://kanka.io"
     }
   ],
   "require": {
-    "illuminate/support": "^6.0|^7.0|^8.0"
+    "illuminate/support": "^8.0|^9.0"
   },
   "autoload": {
     "psr-4": {
