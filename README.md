@@ -1,3 +1,7 @@
+> **Deprecated**
+> This plugin is no longer maintained nor bundled in the Kanka application. If you want a 5e monster sheet, please use the [marketplace](https://marketplace.kanka.io).
+
+
 # Kanka D&D 5e Monster
 
 This package is an extension for [kanka.io](https://kanka.io), to add a community attribute template for D&D 5th edition monsters.
